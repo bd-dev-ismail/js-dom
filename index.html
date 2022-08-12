@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Dom</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        li{
+            color: limegreen;
+        }
+        #medicine-title{
+            color: black;
+        }
+        .lab-list{
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro asperiores ducimus, eos blanditiis hic fuga fugit quisquam, velit accusantium unde consequatur. Delectus, dicta aperiam odit reiciendis pariatur modi ab nemo!</p>
+    <main>
+        <section>
+            <h1>Wecolme to our Dom</h1>
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascipt</li>
+            <li>Bootstrap5</li>
+            <li>Tailwind</li>
+            <li>Dom</li>
+        </ul>
+        </section>
+        <section>
+            <h1 id="medicine-title">Medicine of Acidity</h1>
+            <ul>
+                <li>Seclo</li>
+                <li>Sergel</li>
+                <li>Sompraz</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="diagnstic">Most popular Diagnstic in Chittagong
+            </h1>
+            <ul>
+                <li class="lab-list">Epic</li>
+                <li class="lab-list">Chevron</li>
+                <li class="">Metropoliton</li>
+                <li class="">Max</li>
+                <li class="">Diabetics</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            // console.log(li.innerText);
+        }
+        const allHeadings = document.getElementsByTagName('h1');
+        for(const h1 of allHeadings){
+            // console.log(h1.innerText);
+        }
+        const medicineTitle = document.getElementById('medicine-title');
+        medicineTitle.innerText = 'Hey This is Changed by JavaScript';
+        const lab = document.getElementsByClassName('lab-list')
+            // console.log(lab);
+        for(const labs of lab){
+            console.log(labs.innerText);
+        }
+        
+    </script>
+</body>
+</html>
