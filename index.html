@@ -7,7 +7,7 @@
     <title>Tour of Dom</title>
     <link rel="stylesheet" href="styles/styles.css">
     <style>
-        li{
+        .medicine-container li{
             color: limegreen;
         }
         #medicine-title{
@@ -33,7 +33,7 @@
             <li>Dom</li>
         </ul>
         </section>
-        <section>
+        <section class="medicine-container">
             <h1 id="medicine-title">Medicine of Acidity</h1>
             <ul>
                 <li>Seclo</li>
@@ -55,6 +55,7 @@
     </main>
     <script src="js/dom.js"></script>
     <script>
+        //option -1
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for(const li of liCollection){
@@ -64,14 +65,21 @@
         for(const h1 of allHeadings){
             // console.log(h1.innerText);
         }
+        //option - 2
         const medicineTitle = document.getElementById('medicine-title');
         medicineTitle.innerText = 'Hey This is Changed by JavaScript';
+        //option-3
         const lab = document.getElementsByClassName('lab-list')
             // console.log(lab);
         for(const labs of lab){
             console.log(labs.innerText);
         }
-        
+        // option -4 query Selector All
+        const someLi = document.querySelectorAll('.medicine-container li');
+        // console.log(someLi);
+        for(const li of someLi){
+            console.log(li.innerText);
+        }
     </script>
 </body>
 </html>
