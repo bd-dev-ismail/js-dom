@@ -34,14 +34,14 @@
         </ul>
         </section>
         <section class="medicine-container">
-            <h1 id="medicine-title">Medicine of Acidity</h1>
+            <h1 id="medicine-title" class="some-attiributes hello world its test class">Medicine of Acidity</h1>
             <ul>
                 <li>Seclo</li>
                 <li>Sergel</li>
                 <li>Sompraz</li>
             </ul>
         </section>
-        <section>
+        <section id="lab-container" class="lg-text">
             <h1 id="diagnstic">Most popular Diagnstic in Chittagong
             </h1>
             <ul>
@@ -54,6 +54,9 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/append.js"></script>
+
     <script>
         //option -1
         const liCollection = document.getElementsByTagName('li');
@@ -72,13 +75,13 @@
         const lab = document.getElementsByClassName('lab-list')
             // console.log(lab);
         for(const labs of lab){
-            console.log(labs.innerText);
+            // console.log(labs.innerText);
         }
         // option -4 query Selector All
         const someLi = document.querySelectorAll('.medicine-container li');
         // console.log(someLi);
         for(const li of someLi){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>

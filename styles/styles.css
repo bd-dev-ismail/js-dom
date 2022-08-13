@@ -1,3 +1,9 @@
 h1{
     color: yellowgreen;
 }
+.text-center {
+    text-align: center;
+}
+.lg-text{
+    font-size: 28px;
+}
